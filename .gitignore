@@ -1,0 +1,10 @@
+# Ignore local env files
+artifacts/api-server/.env
+.env
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
