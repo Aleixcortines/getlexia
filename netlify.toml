@@ -1,0 +1,9 @@
+[build]
+  base    = "artifacts/legal-ai-landing"
+  command = "pnpm run build"
+  publish = "dist/public"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
