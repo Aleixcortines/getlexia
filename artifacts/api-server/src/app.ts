@@ -25,11 +25,10 @@ app.use(
     },
   }),
 );
-if (process.env.ALLOWED_ORIGIN) {
-  app.use(cors({ origin: process.env.ALLOWED_ORIGIN }));
-} else {
-  app.use(cors());
-}
+const allowedOrigins = process.env.ALLOWED_ORIGIN
+  ? process.env.ALLOWED_ORIGIN.split(",").map((o) => o.trim())
+  : undefined;
+app.use(cors(allowedOrigins ? { origin: allowedOrigins } : undefined));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
