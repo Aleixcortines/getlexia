@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "cd artifacts/api-server && node build.mjs",
   "builds": [
     { "src": "artifacts/api-server/api/index.ts", "use": "@vercel/node" }
   ],

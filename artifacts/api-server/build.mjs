@@ -5,7 +5,7 @@ rmSync("./dist", { recursive: true, force: true });
 
 try {
   await build({
-    entryPoints: ["./src/index.ts"],
+    entryPoints: ["./src/index.ts", "./src/app.ts"],
     outdir: "./dist",
     bundle: true,
     platform: "node",
