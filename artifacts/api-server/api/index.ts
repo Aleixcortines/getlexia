@@ -1,4 +1,4 @@
-import app from "../src/app";
+import app from "../src/app.js";
 import { VercelRequest, VercelResponse } from "@vercel/node";
 
 // Vercel Node builder expects a default export or a handler function.
