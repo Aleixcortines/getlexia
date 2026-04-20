@@ -25,7 +25,11 @@ app.use(
     },
   }),
 );
-app.use(cors());
+if (process.env.ALLOWED_ORIGIN) {
+  app.use(cors({ origin: process.env.ALLOWED_ORIGIN }));
+} else {
+  app.use(cors());
+}
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
