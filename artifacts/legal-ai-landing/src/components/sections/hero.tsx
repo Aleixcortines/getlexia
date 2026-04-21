@@ -23,7 +23,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground max-w-4xl"
         >
-          De reunión a <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">expediente jurídico</span> en minutos.
+          De reunión a <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">expediente jurídico</span> con control y confidencialidad
         </motion.h1>
 
         <motion.p
@@ -32,7 +32,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-base md:text-lg text-muted-foreground max-w-2xl font-light"
         >
-          El primer asistente de inteligencia artificial que estructura tus conversaciones, detecta riesgos y redacta el seguimiento mientras tú te enfocas en el cliente.
+          Un asistente de IA que estructura tus conversaciones, identifica puntos clave y prepara el seguimiento de cada reunión, para que puedas centrarte en el cliente, respetando la confidencialidad y la práctica profesional.
         </motion.p>
 
         <motion.div

@@ -5,23 +5,23 @@ import { Clock, FileWarning, Search, AlertCircle } from "lucide-react";
 const problems = [
   {
     icon: <Clock className="w-6 h-6 text-primary" />,
-    title: "Reuniones largas con clientes que consumen horas de tu día",
-    description: "El tiempo que pasas documentando podría invertirse en estrategia jurídica."
+    title: "Reuniones con clientes que consumen más tiempo del necesario",
+    description: "El tiempo dedicado a documentar cada reunión reduce el que puedes invertir en estrategia jurídica y atención al cliente."
   },
   {
     icon: <Search className="w-6 h-6 text-primary" />,
-    title: "Información crítica que se pierde entre tus notas",
-    description: "Detalles que parecen menores durante la reunión pero que cambian el rumbo del caso."
+    title: "Información crítica que se diluye entre notas",
+    description: "Detalles relevantes pueden pasar desapercibidos si no se estructuran correctamente desde el primer momento."
   },
   {
     icon: <FileWarning className="w-6 h-6 text-primary" />,
-    title: "Tiempo desperdiciado reconstruyendo lo que se habló",
-    description: "Volver a escuchar grabaciones o intentar descifrar apuntes apresurados."
+    title: "Tiempo invertido en reconstruir conversaciones",
+    description: "Revisar grabaciones o interpretar notas incompletas añade fricción a tu flujo de trabajo."
   },
   {
     icon: <AlertCircle className="w-6 h-6 text-primary" />,
-    title: "Riesgo de errores en detalles que importan",
-    description: "Fechas, nombres y cifras que deben ser exactos desde el primer momento."
+    title: "Riesgo operativo en detalles clave",
+    description: "Fechas, nombres y cifras requieren precisión desde el inicio para evitar errores posteriores."
   }
 ];
 
@@ -40,7 +40,7 @@ export default function Problem() {
             La carga administrativa está limitando tu capacidad de facturación.
           </h2>
           <p className="text-sm md:text-base text-muted-foreground font-light max-w-3xl">
-            Como abogado, tu valor reside en el análisis y la estrategia, no en la transcripción y organización de notas.
+            Como abogado, tu valor está en el análisis y la estrategia, no en la transcripción ni en la gestión manual de notas. Lexia te ayuda a estructurar cada reunión sin perder el control ni la confidencialidad.
           </p>
         </motion.div>
 
