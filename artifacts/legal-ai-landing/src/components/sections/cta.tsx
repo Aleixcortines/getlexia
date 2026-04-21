@@ -14,7 +14,7 @@ Titular: Aleix Cortines Montalvo
 Correo electrónico de contacto: aleixcortines@gmail.com
 
 2. Objeto del sitio web
-El presente sitio web tiene como finalidad proporcionar información sobre un proyecto piloto para agilizar y transcribir reuniones con clientes en el sector legal y permitir a los usuarios facilitar voluntariamente su dirección de correo electrónico para recibir comunicaciones relacionadas con dicho proyecto.
+El presente sitio web tiene como finalidad proporcionar información sobre una herramienta tecnológica orientada a la gestión y estructuración de reuniones en el ámbito jurídico, así como permitir a los usuarios facilitar voluntariamente su dirección de correo electrónico para recibir información relacionada con la solución.
 
 3. Condiciones de uso
 El acceso y uso del sitio web atribuye la condición de usuario, quien se compromete a utilizarlo de forma diligente, conforme a la legislación vigente, la buena fe y el orden público. Queda prohibido cualquier uso con fines ilícitos o que pueda causar daños al titular del sitio web o a terceros.
@@ -57,15 +57,18 @@ La base legal para el tratamiento de los datos es el consentimiento explícito d
 Los datos personales se conservarán mientras el usuario no solicite su supresión o se dé de baja de las comunicaciones, y durante los plazos legalmente exigibles en su caso.
 
 7. Destinatarios de los datos
-Los datos no se cederán a terceros, salvo obligación legal. No se realizan transferencias internacionales de datos.
+Los datos podrán ser tratados por proveedores de servicios necesarios para el funcionamiento del sitio web y la gestión de comunicaciones, actuando en calidad de encargados de tratamiento. En ningún caso se cederán datos a terceros para fines propios.
 
-8. Derechos del usuario
-El usuario puede ejercer los derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación del tratamiento enviando un correo a aleixcortines@gmail.com, adjuntando copia de su DNI o documento identificativo equivalente.
+8. Seguridad de los datos
+El responsable adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad, integridad y confidencialidad de los datos personales, evitando su alteración, pérdida, tratamiento o acceso no autorizado, de conformidad con lo establecido en el Reglamento General de Protección de Datos.
 
-9. Reclamaciones
+9. Derechos del usuario
+El usuario podrá ejercer sus derechos enviando una solicitud acompañada de copia de documento identificativo válido.
+
+10. Reclamaciones
 Si el usuario considera que el tratamiento de sus datos no se ajusta a la normativa vigente, puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
 
-10. Modificaciones
+11. Modificaciones
 La presente Política de Privacidad podrá ser modificada para adaptarse a novedades legislativas o criterios de la AEPD. Las versiones actualizadas estarán disponibles en este sitio web.`;
 
 function PrivacyModal({ onClose }: { onClose: () => void }) {
@@ -163,8 +166,9 @@ export default function Cta() {
           className="text-center mb-12"
         >
           <h2 className="text-2xl md:text-4xl font-serif font-bold text-foreground mb-5 leading-tight">
-            Empieza un piloto con tu despacho
+            Solicita acceso anticipado para tu despacho
           </h2>
+          <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto mt-3">Accede a Lexia en fase inicial y ayúdanos a adaptarla a las necesidades reales de tu despacho.</p>
         </motion.div>
 
         {submitted ? (

@@ -1,28 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Mic, Cpu, FolderOpen } from "lucide-react";
+import Confidentiality from "./confidentiality.tsx";
 
 const steps = [
   {
     number: "01",
     icon: Mic,
-    title: "Grabas o tienes la reunión",
+    title: "Realizas la reunión con normalidad",
     description:
-      "Lexia se activa en segundo plano, fuera del canal de videollamada. El cliente no ve ninguna notificación ni interfaz extraña — sin el incómodo momento de activar el transcriptor delante de él. Compatible con Zoom, Teams, Google Meet y grabaciones locales.",
+      "Lexia se integra de forma discreta en tus reuniones (Zoom, Teams, Google Meet o grabaciones), asistiendo en la estructuración de la información sin alterar la dinámica con el cliente.",
   },
   {
     number: "02",
     icon: Cpu,
-    title: "El sistema transcribe y analiza",
+    title: "La información se organiza automáticamente",
     description:
-      "Nuestra IA especializada en derecho procesa la conversación, identifica partes, hechos clave, fechas críticas y detecta automáticamente posibles riesgos legales.",
+      "El sistema transcribe la conversación y estructura los elementos clave - partes, hechos y fechas - para facilitar su revisión y análisis profesional.",
   },
   {
     number: "03",
     icon: FolderOpen,
-    title: "Recibes el expediente estructurado",
+    title: "Recibes el expediente listo para revisar",
     description:
-      "En minutos tienes la ficha del caso, las alertas detectadas y el borrador del email de seguimiento listos para revisar y actuar. Sin trabajo manual.",
+      "Obtienes una ficha estructurada del caso, puntos relevantes identificados y un borrador de seguimiento, listos para validar y utilizar en tu flujo de trabajo.",
   },
 ];
 
@@ -42,7 +43,8 @@ const itemVariants = {
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="w-full py-32 px-6 relative overflow-hidden bg-muted/30">
+    <>
+      <section id="how-it-works" className="w-full py-32 px-6 relative overflow-hidden bg-muted/30">
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-border to-transparent pointer-events-none"></div>
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-border to-transparent pointer-events-none"></div>
 
@@ -58,7 +60,7 @@ export default function HowItWorks() {
             Tres pasos. <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Sin fricción.</span>
           </h2>
           <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto">
-            Del audio de la reunión al expediente completo en minutos. Tu despacho no necesita cambiar nada de cómo trabaja hoy.
+            De la reunión al expediente estructurado en minutos, sin cambiar cómo trabaja tu despacho.
           </p>
         </motion.div>
 
@@ -103,5 +105,8 @@ export default function HowItWorks() {
 
       </div>
     </section>
+
+      <Confidentiality />
+    </>
   );
 }
