@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "cd artifacts/api-server && node build.mjs",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api" }
+    { "source": "/api/contact", "destination": "/api/index" }
   ]
 }
