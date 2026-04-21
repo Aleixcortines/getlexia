@@ -9,7 +9,7 @@ try {
     outdir: "./dist",
     bundle: true,
     platform: "node",
-    format: "esm",
+    format: "cjs",
     target: ["node24"],
     sourcemap: true,
     external: [
@@ -24,7 +24,7 @@ try {
       "drizzle-orm",
       "node:*",
     ],
-    outExtension: { ".js": ".js" },
+    outExtension: { ".js": ".cjs" },
     logLevel: "info",
   });
 
