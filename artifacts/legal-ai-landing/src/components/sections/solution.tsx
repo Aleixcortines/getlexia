@@ -169,8 +169,11 @@ export default function Solution() {
                           <h2 className="text-sm font-bold">
                             Panel del despacho
                           </h2>
-                          <p className="text-[8px] text-gray-500">
-                            Actividad reciente del expediente
+                          <p className="text-[10px] text-gray-500 mt-0.5">
+                            Resumen de inteligencia para{" "}
+                            <span className="text-emerald-600 font-medium">
+                              Thorne &amp; Associates, LLP
+                            </span>
                           </p>
                         </div>
 
@@ -277,6 +280,19 @@ export default function Solution() {
                         <button className="w-full bg-emerald-500 text-white text-[8px] rounded-lg py-1.5">
                           Revisar expediente
                         </button>
+                      </div>
+                      {/* New card: follow-up email, CRM connection, create expediente */}
+                      <div className="bg-white border border-gray-200 rounded-lg p-3 mt-2">
+                        <p className="text-[9px] text-gray-700 mb-2">
+                          Enviar mail de seguimiento al cliente y crear
+                          expediente.
+                        </p>
+
+                        <div className="flex gap-2">
+                          <button className="flex-1 bg-emerald-500 text-white text-[9px] rounded-lg py-1.5">
+                            Crea expediente
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

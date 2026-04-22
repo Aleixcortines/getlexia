@@ -109,36 +109,36 @@ export default function Hero() {
           {/* Sidebar */}
           <div className="w-52 flex-shrink-0 bg-white border-r border-gray-200 flex flex-col">
             {/* Logo */}
-            <div className="flex items-center gap-2.5 px-4 py-4 border-b border-gray-100">
-              <div className="w-8 h-8 rounded bg-[#0f1e35] flex items-center justify-center flex-shrink-0">
-                <span className="text-white text-[8px] font-bold leading-tight text-center">
-                  FIRM
-                  <br />
-                  Work
+            <div className="flex items-center gap-2 px-3 py-3 border-b border-gray-100">
+              <div className="w-7 h-7 rounded bg-[#0f1e35] flex items-center justify-center">
+                <span className="text-white text-[6px] font-bold text-center">
+                  LX
                 </span>
               </div>
               <div>
-                <div className="text-[8px] text-gray-400 tracking-widest uppercase">
-                  El jurista digital
+                <div className="text-[11px] font-bold text-[#0f1e35]">
+                  Lexia
+                </div>
+                <div className="text-[7px] text-gray-400 uppercase tracking-widest">
+                  Legal Assistant
                 </div>
               </div>
             </div>
 
-            {/* New Transcription Button */}
+            {/* New Meeting Button */}
             <div className="px-3 py-3">
               <button className="w-full bg-[#0f1e35] text-white text-[11px] font-medium rounded-lg py-2.5 flex items-center justify-center gap-1.5">
-                <span className="text-base leading-none">+</span> Nueva
-                transcripción
+                <span className="text-base leading-none">+</span> Nueva reunión
               </button>
             </div>
 
             {/* Nav */}
             <nav className="flex-1 px-2 space-y-0.5">
               {[
-                { label: "Panel", active: true },
+                { label: "Dashboard", active: true },
                 { label: "Reuniones", active: false },
-                { label: "Inteligencia", active: false },
-                { label: "Análisis de riesgos", active: false },
+                { label: "Expedientes", active: false },
+                { label: "Análisis", active: false },
                 { label: "Archivo", active: false },
               ].map((item) => (
                 <div
@@ -212,7 +212,7 @@ export default function Hero() {
                       Julian Thorne, Esq.
                     </div>
                     <div className="text-[8px] text-gray-400 tracking-widest uppercase">
-                      Socio senior
+                      Legal Consultant
                     </div>
                   </div>
                   <div className="w-7 h-7 rounded-full bg-[#0f1e35] flex items-center justify-center text-white text-[10px] font-bold">
@@ -252,9 +252,9 @@ export default function Hero() {
 
                     <div className="bg-white border border-gray-200 rounded-lg px-4 py-2.5 text-center min-w-[90px]">
                       <div className="text-[8px] text-gray-400 uppercase tracking-widest">
-                        Alertas de riesgo
+                        Puntos Clave
                       </div>
-                      <div className="text-xl font-bold text-red-500 mt-0.5">
+                      <div className="text-xl font-bold text-black-500 mt-0.5">
                         01
                       </div>
                     </div>
@@ -344,6 +344,31 @@ export default function Hero() {
                       </svg>
                     </div>
                   ))}
+                  <div className="bg-[#0f1e35] rounded-xl p-3 mt-1">
+                    <p className="text-[9px] text-white mb-2">
+                      Se han identificado varios puntos relevantes para
+                      revisión.
+                    </p>
+                    <button className="w-full bg-emerald-500 text-white text-[8px] rounded-lg py-1.5">
+                      Revisar expediente
+                    </button>
+                  </div>
+                  {/* New card: follow-up email, CRM connection, create expediente */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-3 mt-2">
+                    <p className="text-[9px] text-gray-700 mb-2">
+                      Enviar mail de seguimiento al cliente y crear expediente.
+                    </p>
+
+                    <div className="flex gap-2">
+                      
+                      <button
+                        className="flex-1 bg-emerald-500 text-white text-[9px] rounded-lg py-1.5"
+                       
+                      >
+                        Crea Expediente
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
