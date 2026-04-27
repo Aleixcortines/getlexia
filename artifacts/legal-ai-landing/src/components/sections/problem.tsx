@@ -16,7 +16,7 @@ const problems = [
   {
     icon: <FileWarning className="w-6 h-6 text-primary" />,
     title: "Tiempo invertido en reconstruir conversaciones",
-    description: "Revisar grabaciones o interpretar notas incompletas añade fricción a tu flujo de trabajo."
+    description: "Revisar conversaciones o interpretar notas incompletas añade fricción a tu flujo de trabajo."
   },
   {
     icon: <AlertCircle className="w-6 h-6 text-primary" />,

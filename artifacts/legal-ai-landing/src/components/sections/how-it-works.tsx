@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mic, Cpu, FolderOpen } from "lucide-react";
+import { Mic, Cpu, FolderOpen, Brain } from "lucide-react";
 import Confidentiality from "./confidentiality.tsx";
+import Conocimiento from "./conocimiento.tsx";
 
 const steps = [
   {
@@ -9,7 +10,7 @@ const steps = [
     icon: Mic,
     title: "Realizas la reunión con normalidad",
     description:
-      "Lexia se integra de forma discreta en tus reuniones (Zoom, Teams, Google Meet o grabaciones), asistiendo en la estructuración de la información sin alterar la dinámica con el cliente.",
+      "Lexia se integra de forma discreta en tus reuniones (Zoom, Teams o Google Meet), asistiendo en la estructuración de la información sin alterar la dinámica con el cliente.",
   },
   {
     number: "02",
@@ -25,6 +26,13 @@ const steps = [
     description:
       "Obtienes una ficha estructurada del caso, puntos relevantes identificados y un borrador de seguimiento, listos para validar y utilizar en tu flujo de trabajo.",
   },
+  {
+    number: "04",
+    icon: Brain,
+    title: "El sistema mejora con cada caso",
+    description:
+      "Cuanto más se utiliza, más útil se vuelve. El despacho no solo trabaja más rápido, trabaja con más contexto.",
+  }
 ];
 
 const containerVariants = {
@@ -57,22 +65,22 @@ export default function HowItWorks() {
           className="text-center mb-20"
         >
           <h2 className="text-2xl md:text-4xl font-serif font-bold text-foreground mb-5">
-            Tres pasos. <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Sin fricción.</span>
+            Cuatro pasos. <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Sin fricción.</span>
           </h2>
           <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto">
-            De la reunión al expediente estructurado en minutos, sin cambiar cómo trabaja tu despacho.
+            De la reunión al expediente estructurado y al conocimiento del despacho, en minutos, sin cambiar cómo trabajas.
           </p>
         </motion.div>
 
         <motion.div
-          className="relative grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0"
+          className="relative grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
           {/* Connector line for desktop */}
-          <div className="hidden md:block absolute top-16 left-[calc(16.66%+20px)] right-[calc(16.66%+20px)] h-[1px] bg-gradient-to-r from-primary/20 via-primary/50 to-primary/20 pointer-events-none z-0"></div>
+          <div className="hidden md:block absolute top-16 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-[1px] bg-gradient-to-r from-primary/20 via-primary/50 to-primary/20 pointer-events-none z-0"></div>
 
           {steps.map((step, i) => {
             const Icon = step.icon;
@@ -105,7 +113,6 @@ export default function HowItWorks() {
 
       </div>
     </section>
-
       <Confidentiality />
     </>
   );

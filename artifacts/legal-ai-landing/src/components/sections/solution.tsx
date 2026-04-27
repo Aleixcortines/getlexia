@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Check, ShieldAlert, FileText } from "lucide-react";
+import { Check, ShieldAlert, FileText, Brain } from "lucide-react";
 
 export default function Solution() {
   return (
@@ -93,6 +93,27 @@ export default function Solution() {
                   Generación automática de un email profesional con el resumen
                   de la reunión y los próximos pasos acordados. Solo revisa y
                   envía.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex gap-6 items-start"
+            >
+              <div className="mt-1 flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/15 flex items-center justify-center border border-emerald-500/25">
+                <Brain className="w-5 h-5 text-emerald-600" />
+              </div>
+              <div>
+                <h3 className="text-base font-semibold text-foreground mb-2">
+                  Conocimiento conectado del despacho
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  La información de cada reunión no queda aislada. Se organiza,
+                  se relaciona con otros expedientes y queda disponible para
+                  futuras consultas y decisiones.
                 </p>
               </div>
             </motion.div>
@@ -239,8 +260,8 @@ export default function Solution() {
                             desc: "Cada reunión se convierte en un expediente claro.",
                           },
                           {
-                            title: "Listo para revisar",
-                            desc: "Contenido preparado para validación profesional.",
+                            title: "Conocimiento relacionado",
+                            desc: "Vinculado a otros casos y disponible para consultas futuras.",
                           },
                         ].map((item) => (
                           <div
