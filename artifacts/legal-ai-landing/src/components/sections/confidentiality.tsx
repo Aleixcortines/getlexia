@@ -15,13 +15,11 @@ export default function Confidentiality() {
           Confidencialidad y control, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">por diseño</span>
         </h2>
         <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto mt-3">
-          Lexia está diseñada para operar dentro de las exigencias del entorno jurídico,
-          garantizando el control total de la información por parte del despacho y el
-          cumplimiento del Reglamento General de Protección de Datos.
+         Lexia garantiza el control absoluto de la información por parte del despacho y el cumplimiento del RGPD, operando en entornos jurídicos exigentes y seguros.
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="p-6 bg-muted rounded-lg border">
           <h3 className="font-semibold mb-2">Procesamiento seguro de la información</h3>
           <p className="text-sm text-muted-foreground">Los datos se procesan en entornos controlados, con opciones de almacenamiento adaptadas a las necesidades del despacho.</p>
@@ -37,10 +35,6 @@ export default function Confidentiality() {
           <p className="text-sm text-muted-foreground">Las conversaciones y documentos no se utilizan para entrenar sistemas externos.</p>
         </div>
 
-        <div className="p-6 bg-muted rounded-lg border">
-          <h3 className="font-semibold mb-2">Diseñado para entornos con secreto profesional</h3>
-          <p className="text-sm text-muted-foreground">La arquitectura del sistema respeta los principios de confidencialidad propios de la práctica jurídica.</p>
-        </div>
       </div>
     </section>
   );

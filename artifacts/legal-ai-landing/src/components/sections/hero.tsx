@@ -25,7 +25,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground max-w-4xl"
         >
-          De reuniones a expedientes{" "}
+          Convierte reuniones en expedientes{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">
             y memoria para tu despacho
           </span>
@@ -36,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-base md:text-lg text-muted-foreground max-w-2xl font-light"
         >
-          Un asistente que estructura conversaciones,
+          Un asistente que estructura reuniones,
           identifica puntos clave y construye una base de conocimiento que puedes reutilizar en cada caso,
           manteniendo el control y la confidencialidad.
         </motion.p>

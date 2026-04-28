@@ -4,6 +4,7 @@ import { Mic, Cpu, FolderOpen, Brain } from "lucide-react";
 import Confidentiality from "./confidentiality.tsx";
 import Conocimiento from "./conocimiento.tsx";
 
+
 const steps = [
   {
     number: "01",
@@ -31,7 +32,7 @@ const steps = [
     icon: Brain,
     title: "El sistema mejora con cada caso",
     description:
-      "Cuanto más se utiliza, más útil se vuelve. El despacho no solo trabaja más rápido, trabaja con más contexto.",
+      "El despacho no solo trabaja más rápido, trabaja con mayor contexto acumulado. Cada reunión alimenta una base de conocimiento que facilita el análisis y la preparación de casos futuros.",
   }
 ];
 
@@ -113,6 +114,7 @@ export default function HowItWorks() {
 
       </div>
     </section>
+      <Conocimiento />
       <Confidentiality />
     </>
   );
