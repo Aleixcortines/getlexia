@@ -25,9 +25,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground max-w-4xl"
         >
-          Convierte reuniones en expedientes{" "}
+          Convierte reuniones en acciones{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">
-            y memoria para tu despacho
+            y memoria para tu equipo
           </span>
         </motion.h1>
         <motion.p
@@ -36,8 +36,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-base md:text-lg text-muted-foreground max-w-2xl font-light"
         >
-          Un asistente que estructura reuniones,
-          identifica puntos clave y construye una base de conocimiento que puedes reutilizar en cada caso,
+          Un asistente que estructura reuniones presenciales y por videollamada,
+          identifica puntos clave y construye una base de conocimiento que puedes reutilizar en cada proyecto,
           manteniendo el control y la confidencialidad.
         </motion.p>
 
@@ -117,7 +117,7 @@ export default function Hero() {
                   Lexia
                 </div>
                 <div className="text-[7px] text-gray-400 uppercase tracking-widest">
-                  Legal Assistant
+                  Meeting Copilot
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function Hero() {
               {[
                 { label: "Dashboard", active: true },
                 { label: "Reuniones", active: false },
-                { label: "Expedientes", active: false },
+                { label: "Proyectos", active: false },
                 { label: "Análisis", active: false },
                 { label: "Archivo", active: false },
               ].map((item) => (
@@ -174,7 +174,7 @@ export default function Hero() {
                   </svg>
                 </div>
                 <span className="text-[10px] text-gray-400">
-                  Buscar expedientes, transcripciones...
+                  Buscar reuniones, transcripciones...
                 </span>
               </div>
 
@@ -206,10 +206,10 @@ export default function Hero() {
                 <div className="flex items-center gap-2">
                   <div className="text-right">
                     <div className="text-[10px] font-semibold text-gray-700 leading-tight">
-                      Julian Thorne, Esq.
+                      Julia Torres
                     </div>
                     <div className="text-[8px] text-gray-400 tracking-widest uppercase">
-                      Legal Consultant
+                      Operations Lead
                     </div>
                   </div>
                   <div className="w-7 h-7 rounded-full bg-[#0f1e35] flex items-center justify-center text-white text-[10px] font-bold">
@@ -227,12 +227,12 @@ export default function Hero() {
                 <div className="flex items-start justify-between">
                   <div>
                     <h2 className="text-lg font-bold text-gray-900 leading-tight">
-                      Panel del despacho
+                      Panel del equipo
                     </h2>
                     <p className="text-[10px] text-gray-500 mt-0.5">
                       Resumen de inteligencia para{" "}
                       <span className="text-emerald-600 font-medium">
-                        Thorne &amp; Associates, LLP
+                        Nova Consulting
                       </span>
                     </p>
                   </div>
@@ -347,13 +347,13 @@ export default function Hero() {
                       revisión.
                     </p>
                     <button className="w-full bg-emerald-500 text-white text-[8px] rounded-lg py-1.5">
-                      Revisar expediente
+                      Revisar resumen
                     </button>
                   </div>
-                  {/* New card: follow-up email, CRM connection, create expediente */}
+                  {/* Follow-up card */}
                   <div className="bg-white border border-gray-200 rounded-lg p-3 mt-2">
                     <p className="text-[9px] text-gray-700 mb-2">
-                      Enviar mail de seguimiento al cliente y crear expediente.
+                      Enviar mail de seguimiento y crear tarea.
                     </p>
 
                     <div className="flex gap-2">
@@ -362,7 +362,7 @@ export default function Hero() {
                         className="flex-1 bg-emerald-500 text-white text-[9px] rounded-lg py-1.5"
                        
                       >
-                        Crea Expediente
+                        Crear tarea
                       </button>
                     </div>
                   </div>

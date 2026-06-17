@@ -11,28 +11,28 @@ const steps = [
     icon: Mic,
     title: "Realizas la reunión con normalidad",
     description:
-      "Lexia se integra de forma discreta en tus reuniones (Zoom, Teams o Google Meet), asistiendo en la estructuración de la información sin alterar la dinámica con el cliente.",
+      "Lexia se integra de forma discreta en tus reuniones presenciales mediante app móvil o por videollamada (Zoom, Teams o Google Meet), asistiendo en la estructuración de la información sin alterar la dinámica con los participantes.",
   },
   {
     number: "02",
     icon: Cpu,
     title: "La información se organiza automáticamente",
     description:
-      "El sistema transcribe la conversación y estructura los elementos clave - partes, hechos y fechas - para facilitar su revisión y análisis profesional.",
+      "El sistema transcribe la conversación y estructura los elementos clave - acuerdos, responsables y fechas - para facilitar su revisión y análisis profesional.",
   },
   {
     number: "03",
     icon: FolderOpen,
-    title: "Recibes el expediente listo para revisar",
+    title: "Recibes el resumen listo para revisar",
     description:
-      "Obtienes una ficha estructurada del caso, puntos relevantes identificados y un borrador de seguimiento, listos para validar y utilizar en tu flujo de trabajo.",
+      "Obtienes una ficha estructurada de la reunión, puntos relevantes identificados y un borrador de seguimiento, listos para validar y utilizar en tu flujo de trabajo.",
   },
   {
     number: "04",
     icon: Brain,
-    title: "El sistema mejora con cada caso",
+    title: "El sistema mejora con cada reunión",
     description:
-      "El despacho no solo trabaja más rápido, trabaja con mayor contexto acumulado. Cada reunión alimenta una base de conocimiento que facilita el análisis y la preparación de casos futuros.",
+      "Tu equipo no solo trabaja más rápido, trabaja con mayor contexto acumulado. Cada reunión alimenta una base de conocimiento que facilita el análisis y la preparación de proyectos futuros.",
   }
 ];
 
@@ -69,7 +69,7 @@ export default function HowItWorks() {
             Cuatro pasos. <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">Sin fricción.</span>
           </h2>
           <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto">
-            De la reunión al expediente estructurado y al conocimiento del despacho, en minutos, sin cambiar cómo trabajas.
+            De la reunión al resumen estructurado y al conocimiento del equipo, en minutos, sin cambiar cómo trabajas.
           </p>
         </motion.div>
 

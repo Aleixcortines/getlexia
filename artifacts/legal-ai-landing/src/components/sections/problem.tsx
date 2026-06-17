@@ -5,8 +5,8 @@ import { Clock, FileWarning, Search, AlertCircle } from "lucide-react";
 const problems = [
   {
     icon: <Clock className="w-6 h-6 text-primary" />,
-    title: "Reuniones con clientes que consumen más tiempo del necesario",
-    description: "El tiempo dedicado a documentar cada reunión reduce el que puedes invertir en estrategia jurídica y atención al cliente."
+    title: "Reuniones internas y externas que consumen más tiempo del necesario",
+    description: "El tiempo dedicado a documentar cada reunión reduce el que puedes invertir en trabajo estratégico y relaciones clave."
   },
   {
     icon: <Search className="w-6 h-6 text-primary" />,
@@ -40,7 +40,7 @@ export default function Problem() {
             La carga administrativa está limitando tu capacidad de facturación.
           </h2>
           <p className="text-sm md:text-base text-muted-foreground font-light max-w-3xl">
-            Como abogado, tu valor está en el análisis y la estrategia, no en la transcripción ni en la gestión manual de notas. Lexia te ayuda a estructurar cada reunión sin perder el control ni la confidencialidad.
+            Como profesional, tu valor está en el análisis, la estrategia y la ejecución, no en la transcripción ni en la gestión manual de notas. Lexia te ayuda a estructurar cada reunión sin perder el control ni la confidencialidad.
           </p>
         </motion.div>
 

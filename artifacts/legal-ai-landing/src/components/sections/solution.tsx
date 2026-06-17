@@ -18,11 +18,11 @@ export default function Solution() {
           <h2 className="text-2xl md:text-4xl font-serif font-bold text-foreground mb-5">
             De conversación a{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">
-              conocimiento jurídico accionable
+              conocimiento accionable
             </span>
           </h2>
           <p className="text-sm md:text-base text-muted-foreground font-light max-w-3xl mx-auto">
-            Un asistente de IA diseñado para despachos que procesa el lenguaje
+            Un asistente de IA diseñado para equipos profesionales que procesa el lenguaje
             natural y estructura la información en los formatos que ya utilizas,
             manteniendo el control y la confidencialidad en todo momento.
           </p>
@@ -43,11 +43,11 @@ export default function Solution() {
               </div>
               <div>
                 <h3 className="text-base font-semibold text-foreground mb-2">
-                  Ficha estructurada del caso
+                  Ficha estructurada de la reunión
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Organización de hechos clave, cronología de eventos y perfil
-                  de las partes implicadas en un formato claro y listo para
+                  Organización de puntos clave, acuerdos, responsables y fechas
+                  en un formato claro y listo para
                   integrarse en tu sistema de gestión.
                 </p>
               </div>
@@ -108,11 +108,11 @@ export default function Solution() {
               </div>
               <div>
                 <h3 className="text-base font-semibold text-foreground mb-2">
-                  Conocimiento conectado del despacho
+                  Conocimiento conectado del equipo
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   La información de cada reunión no queda aislada. Se organiza,
-                  se relaciona con otros expedientes y queda disponible para
+                  se relaciona con otros proyectos y queda disponible para
                   futuras consultas y decisiones.
                 </p>
               </div>
@@ -142,7 +142,7 @@ export default function Solution() {
                         Lexia
                       </div>
                       <div className="text-[7px] text-gray-400 uppercase tracking-widest">
-                        Legal Assistant
+                        Meeting Copilot
                       </div>
                     </div>
                   </div>
@@ -157,7 +157,7 @@ export default function Solution() {
                     {[
                       { label: "Dashboard", active: true },
                       { label: "Reuniones", active: false },
-                      { label: "Expedientes", active: false },
+                      { label: "Proyectos", active: false },
                       { label: "Análisis", active: false },
                       { label: "Archivo", active: false },
                     ].map((item) => (
@@ -176,7 +176,7 @@ export default function Solution() {
                   {/* Top bar */}
                   <div className="flex items-center px-4 py-2 bg-white border-b">
                     <div className="flex-1 bg-gray-100 rounded-full px-3 py-1 text-[8px] text-gray-400">
-                      Buscar expedientes, transcripciones...
+                      Buscar reuniones, transcripciones...
                     </div>
                   </div>
 
@@ -188,12 +188,12 @@ export default function Solution() {
                       <div className="flex justify-between">
                         <div>
                           <h2 className="text-sm font-bold">
-                            Panel del despacho
+                            Panel del equipo
                           </h2>
                           <p className="text-[10px] text-gray-500 mt-0.5">
                             Resumen de inteligencia para{" "}
                             <span className="text-emerald-600 font-medium">
-                              Thorne &amp; Associates, LLP
+                              Nova Consulting
                             </span>
                           </p>
                         </div>
@@ -235,10 +235,10 @@ export default function Solution() {
                           <div className="h-1.5 bg-gray-200 rounded-full w-44" />
                         </div>
 
-                        {/* Expediente structure */}
+                        {/* Meeting summary structure */}
                         <div className="mt-3 bg-emerald-50 border border-emerald-100 rounded-lg p-2">
                           <div className="text-[7px] text-emerald-700 font-semibold mb-1">
-                            Estructura del expediente
+                            Estructura del resumen
                           </div>
                           <div className="space-y-1">
                             <div className="h-1.5 bg-emerald-200 rounded-full w-32" />
@@ -253,15 +253,15 @@ export default function Solution() {
                         {[
                           {
                             title: "Confidencialidad",
-                            desc: "La información permanece bajo control del despacho.",
+                            desc: "La información permanece bajo control de tu equipo.",
                           },
                           {
                             title: "Estructuración automática",
-                            desc: "Cada reunión se convierte en un expediente claro.",
+                            desc: "Cada reunión se convierte en un resumen claro.",
                           },
                           {
                             title: "Conocimiento relacionado",
-                            desc: "Vinculado a otros casos y disponible para consultas futuras.",
+                            desc: "Vinculado a otros proyectos y disponible para consultas futuras.",
                           },
                         ].map((item) => (
                           <div
@@ -299,19 +299,18 @@ export default function Solution() {
                           revisión.
                         </p>
                         <button className="w-full bg-emerald-500 text-white text-[8px] rounded-lg py-1.5">
-                          Revisar expediente
+                          Revisar resumen
                         </button>
                       </div>
-                      {/* New card: follow-up email, CRM connection, create expediente */}
+                      {/* Follow-up card */}
                       <div className="bg-white border border-gray-200 rounded-lg p-3 mt-2">
                         <p className="text-[9px] text-gray-700 mb-2">
-                          Enviar mail de seguimiento al cliente y crear
-                          expediente.
+                          Enviar mail de seguimiento y crear tarea.
                         </p>
 
                         <div className="flex gap-2">
                           <button className="flex-1 bg-emerald-500 text-white text-[9px] rounded-lg py-1.5">
-                            Crea expediente
+                            Crear tarea
                           </button>
                         </div>
                       </div>

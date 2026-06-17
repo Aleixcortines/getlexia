@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const PRIVACY_POLICY = `AVISO LEGAL Y TÉRMINOS DE USO
+const PRIVACY_POLICY = `TÉRMINOS DE USO Y PRIVACIDAD
 
 1. Identificación del titular
 En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI‑CE), se informa de que el presente sitio web es titularidad de:
@@ -14,7 +14,7 @@ Titular: Aleix Cortines Montalvo
 Correo electrónico de contacto: aleixcortines@gmail.com
 
 2. Objeto del sitio web
-El presente sitio web tiene como finalidad proporcionar información sobre una herramienta tecnológica orientada a la gestión y estructuración de reuniones en el ámbito jurídico, así como permitir a los usuarios facilitar voluntariamente su dirección de correo electrónico para recibir información relacionada con la solución.
+El presente sitio web tiene como finalidad proporcionar información sobre una herramienta tecnológica orientada a la gestión y estructuración de reuniones profesionales, así como permitir a los usuarios facilitar voluntariamente su dirección de correo electrónico para recibir información relacionada con la solución.
 
 3. Condiciones de uso
 El acceso y uso del sitio web atribuye la condición de usuario, quien se compromete a utilizarlo de forma diligente, conforme a la legislación vigente, la buena fe y el orden público. Queda prohibido cualquier uso con fines ilícitos o que pueda causar daños al titular del sitio web o a terceros.
@@ -26,7 +26,7 @@ Todos los contenidos del sitio web, incluyendo textos, imágenes, diseños, logo
 El titular no se responsabiliza de los posibles errores u omisiones en los contenidos, ni de la falta de disponibilidad del sitio web, realizando los esfuerzos razonables para evitar fallos técnicos.
 
 6. Legislación aplicable y jurisdicción
-El presente Aviso Legal y Términos de Uso se rigen por la legislación española. Para cualquier controversia, las partes se someten a los Juzgados y Tribunales del domicilio del responsable, salvo que la normativa de protección de consumidores disponga otra cosa.
+Los presentes Términos de Uso se rigen por la normativa española. Para cualquier controversia, las partes se someten a los órganos competentes del domicilio del responsable, salvo que la normativa de protección de consumidores disponga otra cosa.
 
 
 POLÍTICA DE PRIVACIDAD (ESPAÑA)
@@ -50,14 +50,14 @@ Los datos facilitados serán tratados con la finalidad de:
 — Gestionar el alta del usuario en la lista de suscriptores.
 — Enviar comunicaciones informativas, novedades o contenidos relacionados con el proyecto.
 
-5. Base jurídica del tratamiento
-La base legal para el tratamiento de los datos es el consentimiento explícito del usuario, conforme al artículo 6.1.a del RGPD. El usuario puede retirar su consentimiento en cualquier momento.
+5. Base de legitimación del tratamiento
+La base de legitimación para el tratamiento de los datos es el consentimiento explícito del usuario, conforme al artículo 6.1.a del RGPD. El usuario puede retirar su consentimiento en cualquier momento.
 
 6. Conservación de los datos
-Los datos personales se conservarán mientras el usuario no solicite su supresión o se dé de baja de las comunicaciones, y durante los plazos legalmente exigibles en su caso.
+Los datos personales se conservarán mientras el usuario no solicite su supresión o se dé de baja de las comunicaciones, y durante los plazos exigibles por la normativa aplicable cuando corresponda.
 
 7. Destinatarios de los datos
-Los datos podrán ser tratados por proveedores de servicios necesarios para el funcionamiento del sitio web y la gestión de comunicaciones, actuando en calidad de encargados de tratamiento. En ningún caso se cederán datos a terceros para fines propios.
+Los datos podrán ser tratados por proveedores de servicios necesarios para el funcionamiento del sitio web y la gestión de comunicaciones, actuando en calidad de encargados de tratamiento. No se cederán datos a terceros para fines propios.
 
 8. Seguridad de los datos
 El responsable adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad, integridad y confidencialidad de los datos personales, evitando su alteración, pérdida, tratamiento o acceso no autorizado, de conformidad con lo establecido en el Reglamento General de Protección de Datos.
@@ -166,9 +166,9 @@ export default function Cta() {
           className="text-center mb-12"
         >
           <h2 className="text-2xl md:text-4xl font-serif font-bold text-foreground mb-5 leading-tight">
-            Solicita acceso anticipado para tu despacho
+            Solicita acceso anticipado para tu equipo
           </h2>
-          <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto mt-3">Accede a Lexia en fase inicial y ayúdanos a adaptarla a las necesidades reales de tu despacho.</p>
+          <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto mt-3">Accede a Lexia en fase inicial y ayúdanos a adaptarla a las necesidades reales de tu organización.</p>
         </motion.div>
 
         {submitted ? (
@@ -221,7 +221,7 @@ export default function Cta() {
               <Input
                 id="email"
                 type="email"
-                placeholder="nombre@tudespacho.es"
+                placeholder="nombre@tuempresa.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 onBlur={() => setTouched((t) => ({ ...t, email: true }))}
@@ -296,7 +296,7 @@ export default function Cta() {
       </div>
 
       <div className="mt-24 text-center text-muted-foreground/30 text-sm">
-        <span className="font-serif italic">Lexia</span> &mdash; IA jurídica para despachos que valoran su tiempo.
+        <span className="font-serif italic">Lexia</span> &mdash; IA para equipos que valoran su tiempo.
       </div>
     </section>
   );

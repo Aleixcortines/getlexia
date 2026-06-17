@@ -19,7 +19,7 @@ export default function Conocimiento() {
 
           <h2 className="text-2xl md:text-4xl font-serif font-bold text-foreground mb-4">
             Cada reunión se convierte en
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400"> conocimiento del despacho</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400"> conocimiento del equipo</span>
           </h2>
 
           <p className="text-sm md:text-base text-muted-foreground font-light max-w-3xl mx-auto">
@@ -42,7 +42,7 @@ export default function Conocimiento() {
             className="p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors group shadow-sm h-full"
           >
             <h3 className="text-base font-semibold text-foreground mb-2 leading-snug">Captura estructurada</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">Cada conversación se transforma automáticamente en información clara: hechos, partes implicadas y contexto relevante.</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">Cada conversación se transforma automáticamente en información clara: acuerdos, responsables y contexto relevante.</p>
           </motion.div>
 
           <motion.div
@@ -52,8 +52,8 @@ export default function Conocimiento() {
             transition={{ duration: 0.5, delay: 0.05 }}
             className="p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors group shadow-sm h-full"
           >
-            <h3 className="text-base font-semibold text-foreground mb-2 leading-snug">Conexión entre expedientes</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">La información no se queda en un único caso. Se vincula con otros expedientes y permite identificar relaciones que de otro modo pasarían desapercibidas.</p>
+            <h3 className="text-base font-semibold text-foreground mb-2 leading-snug">Conexión entre proyectos</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">La información no se queda en una única reunión. Se vincula con otros proyectos y permite identificar relaciones que de otro modo pasarían desapercibidas.</p>
           </motion.div>
 
           <motion.div
@@ -64,7 +64,7 @@ export default function Conocimiento() {
             className="p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors group shadow-sm h-full"
           >
             <h3 className="text-base font-semibold text-foreground mb-2 leading-snug">Reutilización del conocimiento</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">El conocimiento acumulado queda disponible para consulta en cualquier momento, facilitando el análisis y la preparación de nuevos casos.</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">El conocimiento acumulado queda disponible para consulta en cualquier momento, facilitando el análisis y la preparación de nuevos proyectos.</p>
           </motion.div>
         </motion.div>
       </div>

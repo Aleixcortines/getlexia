@@ -15,19 +15,19 @@ export default function Confidentiality() {
           Confidencialidad y control, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-400">por diseño</span>
         </h2>
         <p className="text-sm md:text-base text-muted-foreground font-light max-w-2xl mx-auto mt-3">
-         Lexia garantiza el control absoluto de la información por parte del despacho y el cumplimiento del RGPD, operando en entornos jurídicos exigentes y seguros.
+         Lexia garantiza el control absoluto de la información por parte de tu organización y el cumplimiento del RGPD, operando en entornos profesionales exigentes y seguros.
         </p>
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="p-6 bg-muted rounded-lg border">
           <h3 className="font-semibold mb-2">Procesamiento seguro de la información</h3>
-          <p className="text-sm text-muted-foreground">Los datos se procesan en entornos controlados, con opciones de almacenamiento adaptadas a las necesidades del despacho.</p>
+          <p className="text-sm text-muted-foreground">Los datos se procesan en entornos controlados, con opciones de almacenamiento adaptadas a las necesidades de tu organización.</p>
         </div>
 
         <div className="p-6 bg-muted rounded-lg border">
-          <h3 className="font-semibold mb-2">Control total por parte del despacho</h3>
-          <p className="text-sm text-muted-foreground">La información generada pertenece exclusivamente al despacho y permanece bajo su control en todo momento.</p>
+          <h3 className="font-semibold mb-2">Control total por parte de tu organización</h3>
+          <p className="text-sm text-muted-foreground">La información generada pertenece exclusivamente a tu organización y permanece bajo su control en todo momento.</p>
         </div>
 
         <div className="p-6 bg-muted rounded-lg border">
